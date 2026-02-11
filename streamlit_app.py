@@ -98,6 +98,7 @@ st.markdown("""
         padding: 1rem;
         border-radius: 5px;
         margin: 0.5rem 0;
+        color: black
     }
     
     .result-low {
@@ -106,6 +107,7 @@ st.markdown("""
         padding: 1rem;
         border-radius: 5px;
         margin: 0.5rem 0;
+        color: black
     }
     
     /* Boutons personnalisés */
@@ -138,12 +140,13 @@ st.markdown("""
         border-radius: 8px;
         box-shadow: 0 2px 4px rgba(0,0,0,0.08);
         text-align: center;
+        color: black
     }
     
     .metric-value {
         font-size: 2rem;
         font-weight: 700;
-        color: #2E86AB;
+        color: #black;
     }
     
     .metric-label {
