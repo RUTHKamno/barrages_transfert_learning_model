@@ -234,7 +234,7 @@ if 'daily_stats' not in st.session_state:
 with st.sidebar:
     st.markdown("""
         <div style="text-align: center; padding: 1rem 0; background: linear-gradient(135deg, #2E86AB 0%, #1A5F7A 100%); border-radius: 10px; margin-bottom: 1rem;">
-            <h2 style="color: white; margin: 0;">🏗️ Dam Monitor</h2>
+            <h2 style="color: white; margin: 0;">🏗️ Dam Monitor RuthyyApp</h2>
         </div>
     """, unsafe_allow_html=True)
     st.markdown("---")
@@ -785,7 +785,7 @@ elif page == "📚 Documentation":
         **Exemples célèbres:** Barrage Hoover (États-Unis), Barrage Grand Coulee (États-Unis)
         """)
         
-        st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Hoover_Dam_aerial_view.jpg/1200px-Hoover_Dam_aerial_view.jpg", 
+        st.image("https://www.edf.fr/sites/groupe/files/styles/img_1066x595/public/2025-08/edfgroup_comprendre_hydro_barrage_type-poids_1066x595.jpg?itok=dPkomgVC", 
                  caption="Exemple de barrage-poids: Barrage Hoover", use_container_width=True)
         
         st.markdown("---")
@@ -804,7 +804,7 @@ elif page == "📚 Documentation":
         **Exemples célèbres:** Barrage de Vajont (Italie), Barrage de Monteynard (France)
         """)
         
-        st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Barrage_de_Monteynard_-_2.JPG/1200px-Barrage_de_Monteynard_-_2.JPG", 
+        st.image("https://www.edf.fr/sites/groupe/files/styles/img_465x260/public/2025-08/edfgroup_comprendre_hydro_barrage_type-voute_1066x595.jpg?itok=F3OgLhyA", 
                  caption="Exemple de barrage-voûte: Barrage de Monteynard", use_container_width=True)
         
         st.markdown("---")
@@ -823,7 +823,7 @@ elif page == "📚 Documentation":
         **Exemples célèbres:** Barrage de Tarbela (Pakistan), Barrage des Trois Gorges (Chine)
         """)
         
-        st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/TGD_Dam.jpg/1200px-TGD_Dam.jpg", 
+        st.image("https://www.edf.fr/sites/groupe/files/styles/img_465x260/public/2025-08/edfgroup_comprendre_hydro_barrage_type-contreforts_1066x595.jpg?itok=lo8bOpoC", 
                  caption="Exemple de barrage en remblai: Barrage des Trois Gorges", use_container_width=True)
     
     with tab2:
@@ -1072,8 +1072,8 @@ elif page == "ℹ️ À propos":
         
         Pour toute question, suggestion ou collaboration:
         - 📧 Email: contact@dam-monitor.com
-        - 🌐 Site web: www.dam-monitor.com
-        - 📱 Téléphone: +237 XXX XXX XXX
+        - 🌐 Site web: https://www.edf.fr/groupe-edf/comprendre/production/hydraulique/formes-de-barrages
+        - 📱 Téléphone: +237 692 647 443
         """)
     
     with col2:
@@ -1105,14 +1105,14 @@ elif page == "ℹ️ À propos":
         
         st.info("""
         **Note:** Ce système est un outil d'aide à la décision. 
-        Les résultats doivent toujours être validés par des experts qualifiés.
+        Les résultats doivent toujours être validés par des experts qualifiés dans le domaine.
         """)
 
 # Footer
 st.markdown("---")
 st.markdown("""
     <div style="text-align: center; color: #666; padding: 2rem 0;">
-        <p>Développé avec ❤️ par l'équipe Dam Monitor | © 2026 Tous droits réservés</p>
+        <p>Développé avec ❤️ par l'équipe Dam Monitor Ruthyy | © 2026 Tous droits réservés</p>
         <p style="font-size: 0.8rem;">Version 2.0.0 | Propulsé par PyTorch & Streamlit</p>
     </div>
 """, unsafe_allow_html=True)
