@@ -14,10 +14,11 @@ st.write("Upload an image to classify its condition (Critical, Low, or Normal)."
 # 2. Load Model
 @st.cache_resource
 def load_model():
-    # Define architecture
-    model = models.resnet50()
-    num_ftrs = model.fc.in_features
-    model.fc = nn.Sequential(
+    # Define architecture (EfficientNetV2-S)
+    model = models.efficientnet_v2_s()
+    num_ftrs = model.classifier[1].in_features
+    model.classifier = nn.Sequential(
+        nn.Dropout(p=0.2, inplace=True),
         nn.Linear(num_ftrs, 1024),
         nn.ReLU(),
         nn.Linear(1024, 1024),
@@ -30,7 +31,7 @@ def load_model():
     )
 
     # Load weights (FP16 weights in file)
-    model_path = "resnet50_compressed.pth"
+    model_path = "efficientnet_v2_compressed.pth"
     state_dict = torch.load(model_path, map_location="cpu")
 
     # Cast weights back to float32 for CPU inference stability
