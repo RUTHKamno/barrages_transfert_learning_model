@@ -68,6 +68,7 @@ st.markdown("""
         box-shadow: 0 2px 4px rgba(0,0,0,0.08);
         margin-bottom: 1rem;
         border-left: 4px solid #2E86AB;
+        color: black
     }
     
     .info-card h3 {
@@ -77,7 +78,7 @@ st.markdown("""
     }
     
     .info-card p {
-        color: #212529;
+        color: #black;
         line-height: 1.6;
     }
     
@@ -88,6 +89,7 @@ st.markdown("""
         padding: 1rem;
         border-radius: 5px;
         margin: 0.5rem 0;
+        color: black
     }
     
     .result-normal {
