@@ -42,7 +42,7 @@ st.markdown("""
         background: linear-gradient(135deg, #2E86AB 0%, #1A5F7A 100%);
         padding: 2rem;
         border-radius: 10px;
-        color: white;
+        color: black;
         text-align: center;
         margin-bottom: 2rem;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -109,7 +109,7 @@ st.markdown("""
     /* Boutons personnalisés */
     .stButton>button {
         background-color: #2E86AB;
-        color: white;
+        color: black;
         border-radius: 5px;
         padding: 0.5rem 2rem;
         font-weight: 600;
